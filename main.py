@@ -1,6 +1,6 @@
-from src.classifier_training import *
-from src.summarizer import *
-from src.rss_gathering_data import *
+from classifier_training import *
+from summarizer import *
+from rss_gathering_data import *
 import pandas as pd
 import joblib
 
@@ -158,4 +158,5 @@ html_content = f"""
 """
 
 with open(html_filename, "w", encoding="utf-8") as f:
+
     f.write(html_content)
