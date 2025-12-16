@@ -1,6 +1,6 @@
-from classifier_training import *
-from summarizer import *
-from rss_gathering_data import *
+from src.classifier_training import *
+from src.summarizer import *
+from src.rss_gathering_data import *
 import pandas as pd
 import joblib
 
@@ -41,7 +41,7 @@ for text in texts:
 
 
 #Loading the pretrained model 
-clasifier = joblib.load('classifier.joblib')
+clasifier = joblib.load('models/classifier.joblib')
 
 
 """We make sentiment predictions on the new articles, and we also 
@@ -159,5 +159,6 @@ html_content = f"""
 
 with open(html_filename, "w", encoding="utf-8") as f:
     f.write(html_content)
+
 
 print('ready')
