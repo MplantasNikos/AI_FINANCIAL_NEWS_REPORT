@@ -115,4 +115,3 @@ The system generates a clean, professional HTML report containing:
 - Publication time
 - Direct link to original article
 
-📁 File naming convention:
