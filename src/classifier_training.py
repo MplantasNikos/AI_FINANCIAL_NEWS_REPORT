@@ -3,7 +3,7 @@ import numpy as np
 
 
 #Reading the data exported from dataset_for_training.py .
-data = pd.read_csv('data.csv')
+data = pd.read_csv('data/data.csv')
 
 
 
@@ -72,6 +72,7 @@ weighted avg       0.86      0.86      0.86       453  """
 #Really good results, so we leave it as it is and save it. 
 import joblib
 joblib.dump(pipeline, "classifier.joblib")
+
 
 
 
