@@ -33,4 +33,5 @@ for item in tqdm(dataset):
 
 #Export data in CSV, ready to be used in training of the classifier.
 ready_data = pd.DataFrame({'article':summaries,'label':labels})
-ready_data.to_csv('data.csv')
+
+ready_data.to_csv('data/data.csv')
